@@ -1,0 +1,58 @@
+body{
+   font-size: 25px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-image: url('../img/404.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+
+nav{
+   width: 350px;
+   margin: 5% auto;
+   background: #EEE;
+   border-radius: 10px;
+}
+
+nav li{
+   display: inline;
+   list-style: none;
+   position: relative;
+}
+
+.lista {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+nav li a{
+   color:#666;
+   text-decoration: none;
+   padding: 5px;
+   display: block;
+}
+
+nav li a:hover{
+   color:#08D;
+}
+
+nav li li a{
+   width:150px;
+   display:block;
+}
+
+nav li ul {
+   width: 150px;
+   margin: auto;
+   display:none;
+   background:#F8F8F8;
+   border:1px #ccc solid;
+   position: absolute;
+   left: 0%;
+   /*bottom:-80px;*/
+}
+
+nav li:hover ul {
+   display: block;
+}
+
