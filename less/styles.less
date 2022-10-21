@@ -1,0 +1,58 @@
+@color-letra: #F55CB3;
+@background: #9D3871;
+@fondo: #C44646;
+@boton: #3C2C2C;
+@borde: #FFC2C2;
+@caja: #ECB4D4;
+@letra: #30242B;
+@link: #E5F9BE;
+@fuente: Helvetica;
+
+body{
+    background: @background;
+}
+
+h2{
+    color: @color-letra;
+}
+
+.caja{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto{
+    color: @color-letra;
+}
+
+.menu{
+    .lista{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        li{
+            border: 4px solid @borde;
+            background: @fondo;
+            margin: 15px;
+            padding: 15px;
+            a{
+                color: @letra;
+            }
+        }
+    }
+}
+
+.estilizar_caja{
+    border: 1px solid @borde;
+    background: @caja;
+    color: white;
+    padding: 50px;
+    width: 25%;
+}
+
+.caja{
+    .estilizar_caja();
+}
+
+.texto{
+    .estilizar_caja();
+}
